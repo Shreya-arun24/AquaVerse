@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(39, 67, 91);
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgb(39, 67, 91);
+    width: 90%;
+}
+
+nav img {
+    width: 150px;
+    /* align-items: center; */
+    position: fixed;
+    /* z-index: 1; */
+}
+
+.home {
+    flex: 1;
+    text-align: right;
+}
+
+.home ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 12px;
+    position: relative;
+}
+
+.home ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 5px;
+}
+
+.home ul li a:hover {
+    color: rgb(15, 112, 144);
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+}
+
+
+.logo {
+    border-radius: 60px;
+    background: transparent;
+    cursor: pointer;
+    color: rgb(165, 201, 234);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.para {
+    color: #fff;
+}
+
+.para h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.para p {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+footer {
+    background-color: rgb(39, 67, 91);
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+}
+
+.list li {
+    list-style: none;
+    margin: 10px;
+}
+
+.list li a {
+    color: rgb(165, 201, 234);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.list li:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footercol {
+    width: 25%;
+    padding: 0 25px;
+}
+
+.footercol h4 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 34px;
+}
+
+.copy p {
+    color: lightslategrey;
+    text-align: left;
+    font-size: 11px;
+    margin-left: 10px;
+}
+
+.social {
+    color: lightblue;
+    padding: 14px;
+}
+
+.imag {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imag span {
+    flex: 1;
+}
+
+.imag img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.butns {
+    padding: 1rem;
+    text-align: center;
+}
+
+.dont-butn {
+    display: flex;
+    justify-content: center;
+}
+
+.dont-butn button {
+    background-color: transparent;
+    padding: 20px 30px;
+    text-align: center;
+    color: #fff;
+    border-radius: 1rem;
+    border: 1px solid white;
+    margin: 5px;
+}
+
+.dont-butn button:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0.3);
+    color: rgb(15, 112, 144);
+}
+
+.donation-form {
+    background-color: #c2d5d7;
+    border-radius: 5px;
+    padding: 40px;
+    margin: 50px auto;
+    width: 50%;
+    max-width: 500px;
+    display: none;
+    position: relative;
+}
+
+.donation-form h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.donation-form input,
+.donation-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.donation-form .name input,
+.donation-form .contact input {
+    display: inline-block;
+    width: 50%;
+    margin-right: 4%;
+}
+
+.donation-form .donation label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.donation-form textarea {
+    height: 100px;
+}
+
+.donation-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.donation-form button:hover {
+    background-color: #3e8e41;
+}
+
+.popup {
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-pop {
+    top: 50%;
+    visibility: visible;
+    position: relative;
+}
+
+.popup img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup .ok {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #bfd649;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+   <section class="header">
+    <nav><a href="/home.html"><img src="/images/logo.jpg" width="100px" class="logo"></a>
+        <div class="home">
+            <ul>
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/donation.html">Donation</a></li>
+                <li><a href="/contact.html"   >Contact Us</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <div class="textbox">
+        <h1>Discover the Wonders<br>of the Ocean</h1>
+        <p>Explore the extinct aquatic life that inhabits the vast and mysterious oceans</p>
+        <a href="/explore.html" class="homebutton">Explore</a>
+        <a href="/learnmore.html" class="homebutton">Learn More</a>
+    </div>
+   </section><hr>
+
+   <scetion class="fish">
+    <div class="extinct">
+        <h2>About Extinct Fishes</h2><hr>
+        <div class="extinct-para">
+            <p>It's no small matter to declare a species of fish extinct: after all, the oceans are vast and deep. </p><br>
+        <p>Fish are remarkable creatures that inhabit a vast range of aquatic environments, from the depths of the ocean to freshwater rivers and lakes. Beyond their value as a food source, fish play a crucial role in ecosystems and the health of our planet.<br><br>Fish are integral components of aquatic food webs. They occupy various niches, from herbivores to carnivores, and help regulate populations of prey species. Their predation keeps ecosystem balances in check, preventing the overpopulation of certain species and maintaining biodiversity.Fish also contribute to nutrient cycling in aquatic ecosystems. When they feed on smaller organisms, they excrete nutrients as waste. These nutrients, including nitrogen and phosphorus, become available to other organisms and aquatic plants, promoting the growth of primary producers and the overall health of the ecosystem.</p><br>
+        <p>The ecological importance of fish extends beyond local ecosystems. Oceanic fish, such as tuna and salmon, undertake long migrations that can span thousands of miles. These migrations have far-reaching effects on marine food webs and nutrient cycling, influencing ecosystems worldwide.Fish are not only a staple in our diets but also vital components of ecosystems across the globe. Their ecological importance touches on biodiversity, nutrient cycling, environmental monitoring, and even global-scale processes. As we recognize the value of fish in maintaining the health of our planet, we must prioritize sustainable practices and conservation efforts to ensure their continued presence in our waters.</p>
+        </div>
+
+    </div>
+   </scetion><hr>
+   <section class="signup">
+      <div>
+        <div class="signin">
+            <h3>THE BEST OF AQUAVERSE DELIVERED TO YOU</h3>
+            <P>Sign up for more inspiring photos, stories, and special offers from AquaVerse.</P>
+          </div>
+          <div class="sign-butn">
+            <span><a href="/login.html">SIGN IN</a></span>
+          </div>
+      </div>
+   </section>
+   
+   <hr>
+   <footer>
+    <div class="container">
+        <div class="row">
+            <div class="footercol">
+                <h4>LEAGAL</h4>
+                <hr>
+                <ul class="list">
+                    <li><a href="#" id="terms" onclick="changeContent('terms'); return false;">Terms of Use</a></li>
+                    <li><a href="#" id="privacy" onclick="changeContent('privacy'); return false;">Privacy Policy</a></li>
+                    <li><a href="#" id="ads" onclick="changeContent('ads'); return false;">Interest-Based Ads</a></li>
+                </ul>
+                
+            </div>
+            <div class="footercol">
+                <h4>JOIN US</h4>
+                <hr>
+                <ul class="list">
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/donation.html">Donation</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footercol">
+                <h4>FOLLOW US</h4> 
+                <hr>
+                <br>
+                
+                    <a href="" class="social"><i class="fa fa-facebook"></i></a>
+                    <a href="" class="social"><i class="fa fa-twitter"></i></a>
+                    <a href="" class="social"><i class="fa fa-instagram"></i></a>
+                    <a href="" class="social"><i class="fa fa-linkedin"></i></a>
+                
+            </div>
+        </div>
+       
+    </div>
+    <hr>
+        <br>
+    
+       <div class="copy"><p class="copy">Copyright &copy; 2020-2024 Aquatic life Society.<br>Copyright &copy; 2020-2024 Aquatic life Society Partners,LLC,All rights reserved.</p></div><br>
+   </footer>
+ 
+<script>
+   
+    const currentYear = new Date().getFullYear();
+    const copyrightElement = document.querySelector('.copy p');
+    copyrightElement.innerHTML = `Copyright © 2020-${currentYear} Aquatic life Society.<br>Copyright © 2020-${currentYear} Aquatic life Society Partners, LLC, All rights reserved.`;
+
+   
+    const scrollButton = document.createElement('button');
+    scrollButton.textContent = '^';
+    scrollButton.classList.add('scroll-button');
+    scrollButton.style.borderRadius = '5rem';
+    scrollButton.style.padding = '10px';
+    scrollButton.style.backgroundColor = 'rgb(19, 105, 105)';
+    scrollButton.style.color = '#fff'; 
+    scrollButton.style.position = 'fixed';
+    scrollButton.style.bottom = '20px';
+    scrollButton.style.right = '20px';
+    scrollButton.style.padding = '10px 20px';
+    scrollButton.style.fontSize = '20px';
+    scrollButton.style.borderRadius = '50%';
+    scrollButton.style.border="2px solid white";
+    document.body.appendChild(scrollButton);
+
+    scrollButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+
+    function changeContent(id) {
+    if (id === 'terms') {
+        let t=alert("Terms: By using this website, you agree to our Terms of Use.Your access to and use of this website is conditioned on your acceptance of and compliance with these Terms.");
+        t.style.color="blue";
+    } else if (id === 'privacy') {
+        alert("Privacy: We value your privacy. By using this website, you agree to our Privacy Policy.We use cookies to understand and save your preferences for future visits and compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future.");
+    } else if (id === 'ads') {
+        alert("Ads: This website uses interest-based ads. By continuing to use this site, you agree to this use.These third-party advertisers may collect data about your online activities over time and across different websites when you use our site.")
+    }
+}
+
+</script>   
+</body>
+</html>

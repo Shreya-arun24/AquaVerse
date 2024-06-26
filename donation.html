@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donation Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="donation.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/home.html"><img src="/images/logo.jpg" width="100px" class="logo"></a>
+            <div class="home">
+                <ul>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/donation.html">Donation</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br><br><br><br><br><br><br><br><br><br>    
+    <div class="para">
+        <h2 class="top">Cast a Line for Change: Help Us Clear the Waters!</h2>
+        <p class="top">Our oceans are teeming with diverse species of fish, each playing a crucial role in maintaining the balance of marine ecosystems. However, pollution threatens their survival, disrupting their habitats and poisoning the waters they call home. Your generous donation can make a significant difference. It can aid in funding clean-up initiatives, supporting research into pollution solutions, and raising awareness about the importance of preserving our marine life. Together, we can ensure a safer, cleaner habitat for our fishes. Lets join hands to turn the tide against pollution and create a ripple of change!</p>
+    </div>
+    <br><br><hr><hr>
+    <div class="imag"><img src="/images/donation.webp" alt="" width="100%"></div>
+    <hr><br><br><hr>
+    <div class="imag">
+        <span><img src="/images/one.jpeg" width="50%" alt=""></span>
+        <span><img src="/images/two.jpeg" width="50%" alt=""></span>
+        <span><img src="/images/three.jpeg" width="50%" alt=""></span>
+        <span><img src="/images/four.jpg" width="50%" alt=""></span>
+    </div>
+    <hr><br>
+    <div class="butns">
+        <div class="dont-butn">
+            <button class="myButton" onclick="dontpopUp();setPlaceholder(300)">RS.300</button>
+            <button class="myButton" onclick="dontpopUp();setPlaceholder(500)">RS.500</button>
+            <button class="myButton" onclick="dontpopUp();setPlaceholder(900)">RS.900</button>
+            <button class="myButton" onclick="dontpopUp();setPlaceholder(1500)">RS.1,500</button>
+        </div>
+    </div>
+    <br><hr>
+    <div class="donation-form" id="donation-form">
+        <img src="/images/logo.jpg" width="100px" class="logo">
+        <h2>Donation Form</h2>
+        <div class="name">
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+        </div>
+        <div class="contact">
+            <input type="email" placeholder="Email Address" required>
+            <input type="number" placeholder="Phone Number" required>
+        </div>
+        <input type="text" placeholder="Street Address" required>
+        <div class="address">
+            <input type="text" placeholder="City" required>
+            <input type="text" placeholder="State" required>
+            <input type="text" placeholder="Zip Code" id="pincode" required>
+        </div>
+        <div class="donation">
+            <label for="donation-amount">Donation Amount:</label>
+            <input type="number" id="donation-amount" placeholder="Enter your donation amount" required>
+        </div>
+        <textarea name="queries" placeholder="Any Queries" id="queries"></textarea>
+        <button type="submit" onclick="dontclosePopUp();popUp()" id="submit-btn">Donate Now</button>
+    </div>
+
+    <div class="popup" id="popup">
+        <img src="/images/tick.jpg" alt="">
+        <h2>Thank You!</h2>
+        <p>Your contribution is an investment in our mission. We want you to know that your donation is making a difference. </p>
+        <button type="button" class="ok" onclick="closePopUp()">OK</button>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footercol">
+                    <h4>LEAGAL</h4>
+                    <hr>
+                    <ul class="list">
+                        <li><a href="#" id="terms" onclick="changeContent('terms'); return false;">Terms of Use</a></li>
+                        <li><a href="#" id="privacy" onclick="changeContent('privacy'); return false;">Privacy Policy</a></li>
+                        <li><a href="#" id="ads" onclick="changeContent('ads'); return false;">Interest-Based Ads</a></li>
+                    </ul>
+                </div>
+                <div class="footercol">
+                    <h4>JOIN US</h4>
+                    <hr>
+                    <ul class="list">
+                        <li><a href="/home.html">Home</a></li>
+                        <li><a href="/donation.html">Donation</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
+                  
+                    </ul>
+                </div>
+                <div class="footercol">
+                    <h4>FOLLOW US</h4>
+                    <hr>
+                    <br>
+                    <a href="" class="social"><i class="fa fa-facebook"></i></a>
+                    <a href="" class="social"><i class="fa fa-twitter"></i></a>
+                    <a href="" class="social"><i class="fa fa-instagram"></i></a>
+                    <a href="" class="social"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <div class="copy">
+            <p class="copy">Copyright &copy; 2020-2024 Aquatic life Society.<br>Copyright &copy; 2020-2024 Aquatic life Society Partners, LLC, All rights reserved.</p>
+        </div>
+        <br>
+    </footer>
+    <script src="donation.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="/explore.css">
+<body>
+    <nav>
+        <a href="/home.html"><img src="/images/logo.jpg" class="logo"></a>
+        <div class="home">
+            <ul>
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/donation.html">Donation</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="header"></header>
+    <div class="container1">
+        <div class="slide">
+            <div class="item" style="background-image: url(/images/FISH1.jpg);">
+                <div class="content">
+                    <div class="name">The Blackfin Cisco</div>
+                    <div class="des">A salmonid fish and hence closely related to salmon and trout, the Blackfin Cisco was once plentiful in the Great Lakes, but recently succumbed to a combination of overfishing and predation by not one, but three, invasive species: the Alewife, the Rainbow Smelt, and a genus of sea lamprey. The Blackfin Cisco didn't disappear from the Great Lakes all overnight: the last attested Lake Huron sighing was in 1960; the last Lake Michigan sighting in 1969; and the last known sighting of all, near Thunder Bay, Ontario, was in 2006.</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(/images/FISH2.jpg);">
+                <div class="content">
+                    <div class="name">The Blue Walleye</div>
+                    <div class="des">Also known as the Blue Pike, the Blue Walleye was fished out of the Great Lakes by the bucketload from the late 19th century to the mid 20th Century. The last known specimen was sighted in the early 1980s. It wasn't only overfishing that led to the Blue Walleye's demise. Also to blame were the introduction of an invasive species, the Rainbow Smelt, and industrial pollution from surrounding factories. Many people claim to have caught Blue Walleyes, but experts believe those fish were actually blue-tinged Yellow Walleyes, which are not extinct.</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(/images/FISH3.jpg);">
+                <div class="content">
+                    <div class="name">The Galapagos Damsel</div>
+                    <div class="des">The Galapagos Islands are where Charles Darwin laid much of the groundwork for the theory of evolution. Today, this distant archipelago harbors some of the world's most endangered species. The Galapagos Damsel didn't fall victim to human encroachment: rather, this plankton-eating fish never recovered from a temporary increase in local water temperatures that resulted from the El Niño currents of the early 1980s that drastically reduced plankton populations. Some experts harbor the hope that remnants of the species may yet exist off the coast of Peru.</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(/images/FISH4\ \(2\).jpg);">
+                <div class="content">
+                    <div class="name">The Gravenche</div>
+                    <div class="des">You might think that Lake Geneva on the border of Switzerland and France would enjoy more ecological protection than the Great Lakes of the capitalist-minded United States. While this is, in fact, largely the case, such regulations came too late for the Gravenche. This foot-long salmon relative was overfished in the late 19th century and had virtually disappeared by the early 1920s. It was last seen in 1950. Adding insult to injury, there are apparently no Gravenche specimens (either on display or in storage) in any of the world's natural history museums.</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(/images/FISH5\ \(2\).jpg);">
+                <div class="content">
+                    <div class="name">The Harelip Sucker</div>
+                    <div class="des">Considering how colorful its name is, surprisingly little is known about the Harelip Sucker, which was last seen in the late 19th century. The first specimen of this seven-inch-long fish, native to the rushing freshwater streams of the southeastern U.S., was caught in 1859, and only described nearly 20 years later. By then, the Harelip Sucker was already nearly extinct, doomed by the relentless infusion of silt into its otherwise pristine ecosystem. Did it have a harelip, and did it suck? You may have to visit a museum to find out.</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(/images/FISH6\ \(2\).jpg);">
+                <div class="content">
+                    <div class="name">The Lake Titicaca Orestias</div>
+                    <div class="des">If fish can go extinct in the vast Great Lakes, it should come as no surprise that they can also disappear from Lake Titicaca in South America, which is an order of magnitude smaller. Also known as the Amanto, the Lake Titicaca Orestias was a small, unprepossessing fish with an unusually large head and a distinctive underbite, doomed in the mid-20th century by the introduction of various species of trout into the lake. If you want to see this fish today, you'll have to travel all the way to the National Museum of Natural History in the Netherlands, where there are two preserved specimens on display.</div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i><</button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i>></button>
+        </div>
+    </div>
+    <script>
+        let next = document.querySelector('.next')
+        let prev = document.querySelector('.prev')
+
+        next.addEventListener('click', function(){
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').appendChild(items[0])
+        })
+
+        prev.addEventListener('click', function(){
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').prepend(items[items.length - 1])
+        })
+    </script>
+</body>
+</html> 
